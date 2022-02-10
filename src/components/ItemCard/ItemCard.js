@@ -41,7 +41,10 @@ function ItemCard({
     <article className="ItemCard col col-12 col-md-6 col-lg-4">
       <header>
         <div className="ItemCard__image-wrapper">
+          <button type="button" onClick={onAddToCart}>
           <img src={img} className="ItemCard__image" alt={title} />
+
+          </button>
           <FavoriteIconButton
             handleSetFavorite={onSetFavorite}
             isFavorite={isFavorite}
